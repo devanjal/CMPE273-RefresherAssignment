@@ -1,0 +1,23 @@
+<<!-- make an array of students and then add a student externally
+and display the sorted array. Also, tell the no. of students in the class -->
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<script type="text/javascript">
+var dev= new Array("anshul", "harsih", "ankit");
+dev[3]="vikas";
+var r=1;
+dev.sort();
+for(i=0;i<dev.length;i++){
+	document.write("Rollno. "+r+" -> "+dev[i]+"<br/>");
+	//document.write("Roll no."+r" "+dev[i]+"<br/>");
+	r++;
+}
+document.write("Total no. of students in the class are "+dev.length)
+</script>
+
+</body>
+</html>

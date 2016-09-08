@@ -1,0 +1,26 @@
+<!-- Search the position of CA in the given sentence and also replace it with SJSU -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var str = "Hi! I study in CA"
+document.write("Initial sentence : "+str+"<br>");
+function myFunction() {
+    
+    var n = str.search(/ca/i);
+    
+document.write("The position of CA is : "+n+"<br>");
+    
+}
+function myFunctio() {
+	document.write("<br>")
+   var txt = str.replace(/ca/i,"SJSU");
+   document.write("Sentence after replacement : "+txt);
+}myFunction();
+myFunctio();
+
+</script>
+
+</body>
+</html>

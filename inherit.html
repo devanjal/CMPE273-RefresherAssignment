@@ -1,0 +1,33 @@
+<!-- Use two Car brands and make them inherit the property of parent function "Car"
+and display the information in a paragraph --><!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>/*
+function Student(first, last, university, course) {
+    this.firstName = first;
+    this.lastName = last;
+    this.university = university;
+    this.course = course;
+}
+
+var data = new Student("John", "Doe", "dana dan", "blue");
+
+document.write("My name is " + data.firstName + ". My mother is " + data.university;*/</script>
+<script>
+function Car(brand,name,model,color){
+	this.brand=brand;
+	this.name=name;
+	this.model=model;
+	this.color=color;
+	
+}
+var honda= new Car("Honda","City","Sedan","Black")
+var toyota= new Car("Toyota","Corolla","Sedan","Silver")
+document.write(honda.brand+"'s new car "+honda.name+" in "+honda.color+" color "+honda.model+" model is better than "+toyota.brand+" "+toyota.name+"'s "+toyota.model)
+</script>
+
+</body>
+</html>
