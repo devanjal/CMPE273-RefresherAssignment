@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<title>Local Storage</title>
+<body>
+<script>
+
+if (typeof(Storage) !== "undefined") 
+	{
+    var x= prompt("Enter the name of your City in USA")
+    var y= prompt("Enter Your Area Code");
+    localStorage.setItem("City", x);
+    localStorage.setItem("code", y);
+    if(x==null || y==null){
+    	document.write("Error input")
+    }
+    else{
+    document.write("Your City is "+localStorage.getItem("City")+" and its Zip Code is "+localStorage.getItem("code"));
+} 
+		}
+    else {
+    document.write("Error!! Browser problem")
+}
+
+</script>
+
+</body>
+</html>
+

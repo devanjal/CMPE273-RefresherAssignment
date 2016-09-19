@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Input Type</title>
+</head>
+<body>
+
+<form action="success.html" method=post>
+<fieldset>
+First name<input type="text" placeholder="Enter Your First Name" required pattern="[A-Za-z]{1,32}" required="required" autofocus/>
+Last name<input type="text" placeholder="Enter Your Last Name" required pattern="[A-Za-z]{1,32}" required="required"/>
+
+Email:<input type="email" required>
+Set Password<input type="password" placeholder="Atleast 5 characters" required pattern=".{6,}" name="pwd1" required="required">
+</fieldset>
+<input type="submit" id=submit>
+</form>
+
+</body>
+</html>

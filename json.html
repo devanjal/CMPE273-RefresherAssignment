@@ -7,14 +7,15 @@
 <p id="demo"></p>
 
 <script>
-var text = '{"employees":[' +
-'{"firstName":"John","lastName":"Doe" },' +
-'{"firstName":"Anna","lastName":"Smith" },' +
-'{"firstName":"Peter","lastName":"Jones" }]}';
+var cric = '{"cricketer":[' +
+'{"firstName":"Rahul","lastName":"Dravid" },' +
+'{"firstName":"Adam","lastName":"Gilchrist" },' +
+'{"firstName":"Kumar","lastName":"Sangakara" }]}';
 
-obj = JSON.parse(text);
-document.getElementById("demo").innerHTML =
-obj.employees[2].firstName + " " + obj.employees[2].lastName;
+obj = JSON.parse(cric);
+for(i=0;i<3;i++){
+document.write(obj.cricketer[i].firstName + " " + obj.cricketer[i].lastName+"<br>");
+}
 </script>
 
 </body>

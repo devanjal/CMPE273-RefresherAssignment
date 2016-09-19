@@ -1,5 +1,4 @@
-<<!-- show the difference in javascript approach by using strict mode in a function and one without
-strict mode -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,14 +6,18 @@ strict mode -->
 <script type="text/javascript">
 function strict(){
 "use strict";
-try{
-str="Hello!!!";
-document.write(str);
-}
-catch(e){document.write(e)}}
-strict();
-myString ="<br>Hey Devanjal.. Whats up??" /*here myString is not defined still it writes the msg
-											without any issue*/
+	try{
+		str="Hello!!!"; // Here data type "var" is not used for str so it will generate error
+		document.write(str);
+		}
+	catch(e){
+				document.write(e+"<br>");
+			}
+				}
+		strict();
+		
+		myString ="<br>Hey Devanjal.. Whats up??" /*here data type myString is not defined still it writes the msg
+													without any issue because of no strict mode*/
 		document.write(myString);
 </script>
 </body>

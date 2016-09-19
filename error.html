@@ -1,25 +1,24 @@
+<html>
+<title>Error</title>
+<body>
 <script type="text/javascript">
-<!--
-
-//-->
-
 function divide()
 {
-    var numerator = Number(prompt("Enter numerator"));
-    var denominator = Number(prompt("Enter denominator"));
+    var num = prompt("Enter numerator");
+    var den = prompt("Enter denominator");
 
     try
     {
-        if (denominator == 0)
+        if (den == 0)
         {
             throw {
                 error: "Divide by zero error",
                 message: "Denominator cannot be zero"
-            };
+          			};
         }
         else
         {
-            alert("Result = " + (numerator / denominator));
+            alert("Result = " + (num / den));
         }
     }
     catch (e)
@@ -27,7 +26,12 @@ function divide()
         document.write(e.error + "<br/>");
         document.write(e.message + "<br/>");
     }
+    finally{
+    	
+    }
 }
 
-divide();
+	divide();
 </script>
+</body>
+</html>
